@@ -1,4 +1,5 @@
 package ChatBot;
+import javax.swing.*;
 import java.util.Scanner;
 public class ChatBot {
     public static void main(String[] args){
@@ -29,7 +30,19 @@ public class ChatBot {
         for (int i = 0; i <= nu; i++) {
             System.out.println(i + "!");
         }
+//        ChatBot 5
+        System.out.println("Let`s test you knowledge.");
+        System.out.println("What is the range of the byte type in java?" + "\n1. To repeat a statement multiple times." + "\n2. To decompose a program into several small subroutines." + "\n3. To determine the execution time of a program." + "\n4. To interrupt the executio of a program.");
+        while (true) {
+            int reply = scan.nextInt();
+            if (reply == 4) {
+                System.out.println("Great, you right!\nGoodbye, have a nice day");
+                break;
+            } else {
+                System.out.println("Please, try again.");
 
+            }
+        }
 
     }
 }
